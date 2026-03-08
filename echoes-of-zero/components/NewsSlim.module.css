@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.recentArticlesHeader {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding: 40px;
+}
+
+.gridContainer {
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+}

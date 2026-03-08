@@ -1,0 +1,32 @@
+.navbar {
+    height: 64px;
+    background: #000000cc;
+    border-bottom: 1px solid #e4e6ff13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarSub {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.icon {
+    padding: 0 1vw;
+    height: 36px;
+    width: auto;
+}
+
+.navbarName {
+    font-family: "Roboto", system-ui, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.125s;
+}
+
+.navbarName:hover {
+    text-shadow: 0 0 10px #fff;
+}

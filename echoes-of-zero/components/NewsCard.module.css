@@ -1,0 +1,35 @@
+.newsCard {
+    background: #26262A;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.newsCard:hover {
+    outline: 3px solid #ffffffab;
+    outline-offset: 3px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.cardContent {
+    margin: 8px;
+}
+
+.cardDate {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    font-size: medium;
+    color: #BEC9CA;
+}
+
+.cardTitle {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    font-size: x-large;
+}

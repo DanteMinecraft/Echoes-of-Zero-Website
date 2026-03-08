@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.article {
+    color: #BEC9CA;
+}
+
+.article h2 {
+    padding-top: 5vh;
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    
+    font-size: x-large;
+    color: #fff;
+
+}
+
+.articleHeader {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    max-width: 800px;
+    padding: 8vh 0;
+    margin: auto;
+}
+
+.articleTitle {
+    font-size: xx-large;
+    color: #fff;
+}
+
+.articleDate {
+    font-size: medium;
+    padding-top: 2vh;
+}
+
+.articleImage {
+    margin: auto;
+    border-radius: 16px;
+}
+
+.articleText {
+    padding: 5vh 0;
+    max-width: 40%;
+    margin: auto;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
