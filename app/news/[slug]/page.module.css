@@ -7,7 +7,7 @@
 .article h2 {
     padding-top: 5vh;
     font-family: "Archivo Black", Helvetica, sans-serif;
-    
+
     font-size: x-large;
     color: #fff;
 
@@ -43,4 +43,32 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.25em;
     letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+
+    .article h2 {
+        padding-top: 5vh;
+
+        font-size: large;
+
+    }
+
+    .articleHeader {
+        max-width: 80%;
+    }
+
+    .articleTitle {
+        font-size: x-large;
+        color: #fff;
+    }
+
+    .articleImage {
+        border-radius: 0px;
+    }
+
+    .articleText {
+        max-width: 80%;
+    }
+
 }

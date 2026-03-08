@@ -18,7 +18,8 @@
     align-items: stretch;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .gridContainer {
         display: flex;
         flex-direction: column;
