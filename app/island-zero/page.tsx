@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>
-        <p>Island Zero UPDATE</p>
+        <p>Island Zero UPDATE 2</p>
       </div>
     </>
   );
