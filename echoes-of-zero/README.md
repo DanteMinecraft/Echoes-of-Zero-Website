@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Echoes of Zero Website
 
-## Getting Started
+Official website for the **Echoes of Zero UEFN** project.
 
-First, run the development server:
+This site serves as the central hub for the Echoes of Zero universe, including development updates, story information, and the legacy history of the Island Zero maps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The website is built using a headless CMS architecture, where WordPress manages the content while a custom Next.js frontend renders the website.
+
+# Features
+
+- Custom news system powered by WordPress REST API
+- Dynamic blog posts rendered through **Next.js App Router**
+- Dedicated pages for **story, legacy maps, and project updates**
+- Responsive design optimized for modern displays
+- Fully custom UI (*no WordPress themes*)
+
+# Tech Stack
+
+## Frontend:
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+
+## Content Management:
+
+- WordPress (*Headless CMS*)
+- WordPress REST API
+
+## Infrastructure:
+
+Self-hosted environment using Linux containers
+
+Reverse proxy routing through Nginx
+
+# Project Structure
+```app/
+ ├ page.tsx                 # Landing page
+ ├ news/
+ │   ├ page.tsx             # News listing
+ │   └ [slug]/page.tsx      # Dynamic blog posts
+ ├ story/page.tsx           # Story overview
+ ├ island-zero/
+ │   ├ page.tsx             # Legacy Island Zero info
+ │   └ inbetween/page.tsx   # Inbetween remaster page
 ```
+Content is fetched dynamically from the WordPress API:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://wpa.echoesofzero.net/wp-json/wp/v2/posts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies:
 
-## Learn More
+`npm install`
 
-To learn more about Next.js, take a look at the following resources:
+Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The site will be available at:
 
-## Deploy on Vercel
+`http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Content Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All news articles and updates are written in WordPress and automatically appear on the website through the **REST API**.
+
+The site frontend simply fetches and renders the content dynamically.
+
+# About Echoes of Zero
+
+**Echoes of Zero** is an ongoing creative project centered around UEFN (Fortnite) maps with environmental storytelling and a connected universe of locations.
+
+The project builds upon the legacy of the original **Island Zero** maps while expanding the world through new environments and narrative elements.
+
+# License
+
+This project is intended for personal and creative use as part of the Echoes of Zero project.
+
+# Author
+
+Created by **DanteMC**
