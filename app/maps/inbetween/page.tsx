@@ -1,12 +1,19 @@
+import LandingHero from "@/components/LandingHero";
 import Navbar from "@/components/Navbar";
+import NewsSlim from "@/components/NewsSlim";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+import inbetweenLogo from "@/public/inbetween_logo.png";
+
+export default function Inbetween() {
   return (
     <>
-      <Navbar />
-      <div>
-        <p>Island Zero Inbetween Page</p>
-      </div>
+        <Navbar/>
+        <LandingHero
+          logotypeHero={inbetweenLogo}
+        />
+        <NewsSlim/>
+        <Footer/>
     </>
   );
 }

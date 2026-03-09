@@ -1,15 +1,14 @@
 import Image from "next/image";
-import islandZeroImage from "../public/echoes_of_zero.png";
 
 import styles from "./LandingHero.module.css";
 
-export default function LandingHero() {
+export default function LandingHero( {logotypeHero}: any) {
     return (
         <>
             <div className={styles.landingHero}>
                 <div className={styles.content}>
                     <Image
-                        src={islandZeroImage}
+                        src={logotypeHero}
                         alt="Logotype"
                         className={styles.logotype}
                     />
