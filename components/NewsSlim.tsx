@@ -1,4 +1,4 @@
-import styles from "./NewsSlim.module.css";
+import styles from "./3Grid.module.css";
 import NewsCard from "./NewsCard";
 
 import { getPosts } from "@/lib/getPosts"

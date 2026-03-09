@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import NewsCard from "../../components/NewsCard";
 import Footer from "@/components/Footer";
 
-import styles from "../../components/NewsSlim.module.css";
+import styles from "../../components/3Grid.module.css";
 
 import { getPosts } from "@/lib/getPosts"
 
