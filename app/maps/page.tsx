@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Maps() {
   return (
     <>
       <Navbar />
       <div>
-        <p>Island Zero UPDATE 2</p>
+        <p>The world of Echoes of Zero</p>
       </div>
     </>
   );
