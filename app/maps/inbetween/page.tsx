@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>
-        <p>Inbetween</p>
+        <p>Island Zero Inbetween Page</p>
       </div>
     </>
   );

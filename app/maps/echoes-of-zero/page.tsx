@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>
-        <p>Island Zero Page</p>
+        <p>Echoes of Zero Page</p>
       </div>
     </>
   );
