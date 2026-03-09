@@ -17,6 +17,7 @@ export default function Navbar() {
                 </a>
                 <a href="/" className={styles.navbarName}>Home</a>
                 <a href="/news" className={styles.navbarName}>News</a>
+                <a href="/maps" className={styles.navbarName}>Maps</a>
                 <a href="/island-zero" className={styles.navbarName}>Island Zero</a>
             </div>
         </div>
