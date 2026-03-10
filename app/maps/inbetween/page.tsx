@@ -4,11 +4,11 @@ import NewsField from "@/components/NewsField";
 import Footer from "@/components/Footer";
 
 import { getPosts } from "@/lib/getPosts";
+import { CATEGORIES } from "@/lib/postCategories";
 
 import inbetweenLogo from "@/public/inbetween_logo.png";
-import inbetweenHero from "@/public/inbetween_hero.jpg";
 
-const posts = await getPosts(10);
+const posts = await getPosts(CATEGORIES.INBETWEEN);
 
 export default function InbetweenSubpage() {
   return (
