@@ -1,14 +1,16 @@
+export const revalidate = 60
+
 import LandingHero from "@/components/LandingHero";
 import Navbar from "@/components/Navbar";
 import NewsField from "@/components/NewsField";
 import Footer from "@/components/Footer";
 
 import { getPosts } from "@/lib/getPosts";
-const posts = await getPosts();
 
 import landingPageLogo from "@/public/echoes_of_zero.png";
 
-export default function LandingPage() {
+export default async function LandingPage() {
+const posts = await getPosts();
   return (
     <>
       <Navbar />

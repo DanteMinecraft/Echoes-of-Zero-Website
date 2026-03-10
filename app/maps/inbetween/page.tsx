@@ -1,3 +1,5 @@
+export const revalidate = 60
+
 import LandingHero from "@/components/LandingHero";
 import Navbar from "@/components/Navbar";
 import NewsField from "@/components/NewsField";
@@ -8,9 +10,8 @@ import { CATEGORIES } from "@/lib/postCategories";
 
 import inbetweenLogo from "@/public/inbetween_logo.png";
 
-const posts = await getPosts(CATEGORIES.INBETWEEN);
-
-export default function InbetweenSubpage() {
+export default async function InbetweenSubpage() {
+  const posts = await getPosts(CATEGORIES.INBETWEEN);
   return (
     <>
       <Navbar />
@@ -21,7 +22,7 @@ export default function InbetweenSubpage() {
       />
       <NewsField
         posts={posts}
-        headerAboveCards="Recent Articles for Inbetween"
+        headerAboveCards="Recent Articles: Inbetween"
       />
       <Footer />
     </>
