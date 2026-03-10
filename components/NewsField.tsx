@@ -1,16 +1,29 @@
 import styles from "./3Grid.module.css";
 import NewsCard from "./NewsCard";
 
-import { getPosts } from "@/lib/getPosts"
+type Post = {
+    header: string
+    id: number
+    date: string
+    slug: string
+    title: { rendered: string }
+    _embedded?: any
+}
 
-const posts = await getPosts()
-
-export default async function NewsSlim() {
+export default function NewsField({
+    posts,
+    limit = 6,
+    headerAboveCards = "Recent Articles"
+}: {
+    posts: Post[]
+    limit?: number,
+    headerAboveCards?: string
+}) {
     return (
         <>
-            <h1 className={styles.recentArticlesHeader}>Recent Articles</h1>
+            <h1 className={styles.recentArticlesHeader}>{headerAboveCards}</h1>
             <div className={styles.gridContainer}>
-                {posts.slice(0, 3).map((post: any) => (
+                {posts.slice(0, limit).map((post) => (
                     <NewsCard
                         key={post.id}
                         title={post.title.rendered}

@@ -1,16 +1,18 @@
-export async function getPosts() {
+export async function getPosts(category?: number) {
 
-    const res = await fetch(
+    let url = "https://wpa.echoesofzero.net/wp-json/wp/v2/posts?_embed";
 
-        "https://wpa.echoesofzero.net/wp-json/wp/v2/posts?_embed",
-        {
-            next: { revalidate: 1 } //Change to 60
-        }
-    )
-
-    if (!res.ok) {
-        throw new Error("Failed to fetch posts from API")
+    if (category) {
+        url += `&categories=${category}`;
     }
 
-    return res.json()
+    const res = await fetch(url, {
+        next: { revalidate: 60 }
+    });
+
+    if (!res.ok) {
+        throw new Error("Failed to fetch posts from API");
+    }
+
+    return res.json();
 }

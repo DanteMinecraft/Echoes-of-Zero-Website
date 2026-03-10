@@ -1,7 +1,8 @@
 import styles from "./3Grid.module.css";
 import MapCard from "./MapCard";
 
-import islandZeroImage from "../public/placeholder.png";
+import inbetweenThumbnail from "@/public/inbetween_thumbnail.jpg";
+import placeholder from "@/public/placeholder.png";
 
 export default function MapContainer() {
     return (
@@ -12,19 +13,19 @@ export default function MapContainer() {
                     <MapCard
                         title="Inbetween"
                         onSiteLink="inbetween"
-                        image={islandZeroImage}
+                        image={inbetweenThumbnail}
                     />
                     
                     <MapCard
                         title="Echoes of Zero"
                         onSiteLink="echoes-of-zero"
-                        image={islandZeroImage}
+                        image={placeholder}
                     />
                     
                     <MapCard
                         title="Island Zero"
                         onSiteLink="island-zero"
-                        image={islandZeroImage}
+                        image={placeholder}
                     />
             </div>
         </>

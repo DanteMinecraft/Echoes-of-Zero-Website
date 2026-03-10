@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .landingHero {
-    background: linear-gradient(#00000040, #00000040), url('/cover-image.webp');
+    /*background: linear-gradient(#00000040, #00000040), url('/cover-image.webp');*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
