@@ -35,6 +35,12 @@
     border-radius: 16px;
 }
 
+.articleText img {
+    margin: auto;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
 .articleText {
     padding: 5vh 0;
     max-width: 40%;

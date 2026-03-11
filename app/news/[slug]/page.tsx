@@ -21,6 +21,10 @@ export default async function BlogPost({ params }: any) {
 
   const post = await getPost(slug)
 
+  const content = post.content.rendered
+    .replace(/srcset="[^"]*"/g, "")
+    .replace(/sizes="[^"]*"/g, "")
+
   const image =
     post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
 
@@ -55,7 +59,7 @@ export default async function BlogPost({ params }: any) {
 
         <div className={styles.articleText}
           dangerouslySetInnerHTML={{
-            __html: post.content.rendered
+            __html: content
           }}
         />
 

@@ -14,5 +14,6 @@ export async function getPosts(category?: number) {
         throw new Error("Failed to fetch posts from API");
     }
 
+
     return res.json();
 }
