@@ -7,7 +7,6 @@ import styles from "./page.module.css";
 async function getPost(slug: string) {
   const res = await fetch(
     `https://wpa.echoesofzero.net/wp-json/wp/v2/posts?slug=${slug}&_embed`,
-    // { next: { revalidate: 60 } }
     { cache: "no-store" }
   )
 

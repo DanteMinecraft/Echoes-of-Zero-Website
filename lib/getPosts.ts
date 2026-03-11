@@ -1,6 +1,6 @@
 export async function getPosts(category?: number) {
 
-    let url = "https://wpa.echoesofzero.net/wp-json/wp/v2/posts?_embed";
+    let url = "https://wpa.echoesofzero.net/wp-json/wp/v2/posts?_embed&per_page=100";
 
     if (category) {
         url += `&categories=${category}`;

@@ -22,6 +22,7 @@ export default async function InbetweenSubpage() {
       />
       <NewsField
         posts={posts}
+        limit={posts.length}
         headerAboveCards="Recent Articles: Inbetween"
       />
       <Footer />
