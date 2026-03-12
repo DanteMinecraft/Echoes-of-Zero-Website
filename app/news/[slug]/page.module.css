@@ -4,15 +4,6 @@
     color: #BEC9CA;
 }
 
-.article h2 {
-    padding-top: 5vh;
-    font-family: "Archivo Black", Helvetica, sans-serif;
-
-    font-size: x-large;
-    color: #fff;
-
-}
-
 .articleHeader {
     font-family: "Archivo Black", Helvetica, sans-serif;
     max-width: 800px;
@@ -28,6 +19,36 @@
 .articleDate {
     font-size: medium;
     padding-top: 2vh;
+}
+
+
+.article h2, .article h3 {
+    padding-top: 5vh;
+    font-family: "Archivo Black", Helvetica, sans-serif;
+
+    color: #fff;
+}
+
+.article h2 {
+    font-size: xx-large;
+}
+
+.article h3 {
+    font-size: x-large;
+}
+
+.article h4, .article h5 {
+    padding-top: 5vh;
+    font-size: large;
+    font-weight: bold;
+}
+
+.article ul {
+    list-style: disc;
+}
+
+.article h4 {
+    text-transform: uppercase;
 }
 
 .articleImage {
