@@ -12,8 +12,8 @@ export default async function News() {
   const posts = await getPosts();
   return (
     <>
+      <Navbar />
       <div className={stylesFullSection.FullSection}>
-        <Navbar />
         <NewsField
           posts={posts}
           limit={posts.length}

@@ -18,6 +18,8 @@ export default async function InbetweenSubpage() {
       <LandingHero
         logotypeHero={inbetweenLogo}
         heroBackground="/inbetween_hero.jpg"
+        yellowButtonHref="https://www.fortnite.com/@danteminecraft?lang=en-US"
+        yellowButtonText="Play Now"
 
       />
       <NewsField

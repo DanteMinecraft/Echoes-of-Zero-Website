@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./LandingHero.module.css";
 
-export default function LandingHero({ logotypeHero, heroBackground }: any) {
+export default function LandingHero({ logotypeHero, heroBackground, yellowButtonText, yellowButtonHref }: any) {
     return (
         <>
             <div
@@ -17,7 +17,7 @@ export default function LandingHero({ logotypeHero, heroBackground }: any) {
                         alt="Logotype"
                         className={styles.logotype}
                     />
-                    <a href="/" className={styles.yellowButton}>Play Now</a>
+                    <a href={yellowButtonHref} className={styles.yellowButton} target="_blank" rel="noopener noreferrer">{yellowButtonText}</a>
                 </div>
             </div >
         </>
