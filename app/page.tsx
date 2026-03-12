@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 import { getPosts } from "@/lib/getPosts";
 
-import landingPageLogo from "@/public/echoes_of_zero.png";
+import landingPageLogo from "@/public/inbetween_logo.png";
 
 export default async function LandingPage() {
 const posts = await getPosts();
@@ -16,10 +16,10 @@ const posts = await getPosts();
       <Navbar />
       <LandingHero
         logotypeHero={landingPageLogo}
-        heroBackground="./cover-image.webp"
+        heroBackground="/inbetween_hero.jpg"
         yellowButtonHref="https://www.fortnite.com/@danteminecraft?lang=en-US"
-        yellowButtonText="Explore Maps"
-      />
+        yellowButtonText="Play Now"
+        />
       <NewsField
         posts={posts}
         limit={3}

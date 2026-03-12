@@ -1,5 +1,6 @@
 export const revalidate = 60
 
+import "./island-zero.css";
 import LandingHero from "@/components/LandingHero";
 import Navbar from "@/components/Navbar";
 import NewsField from "@/components/NewsField";
@@ -20,8 +21,13 @@ export default async function IslandZeroSubpage() {
         heroBackground="/island_zero_hero.webp"
         yellowButtonHref="https://www.fortnite.com/@danteminecraft?lang=en-US"
         yellowButtonText="Play Now"
-
       />
+      <div className="island-zero-summary">
+        <h2 className="h2-island-zero">Welcome to Chapter 2!</h2>
+        <p className="ch2-summary">
+          After the Zero Point stabilized the fractured world of the Inbetween, reality began to rebuild itself. From the remnants of what once existed, a new world emerged — a reality we now call Reality 55.
+          </p>
+      </div>
       <NewsField
         posts={posts}
         limit={posts.length}

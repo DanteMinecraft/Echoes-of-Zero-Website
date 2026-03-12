@@ -7,19 +7,13 @@ import placeholder from "@/public/placeholder.png";
 export default function MapContainer() {
     return (
         <>
-            <h1 className={styles.recentArticlesHeader}>The Echoes of Zero Universe</h1>
+            <h1 className={styles.recentArticlesHeader}>The Island of Zero Universe</h1>
 
             <div className={styles.gridContainer}>
                     <MapCard
                         title="Inbetween"
                         onSiteLink="inbetween"
                         image={inbetweenThumbnail}
-                    />
-                    
-                    <MapCard
-                        title="Echoes of Zero"
-                        onSiteLink="echoes-of-zero"
-                        image={placeholder}
                     />
                     
                     <MapCard

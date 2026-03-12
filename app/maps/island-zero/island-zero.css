@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.island-zero-summary {
+    padding: 5vh 0;
+}
+
+.h2-island-zero {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.ch2-summary {
+    max-width: 1400px;
+    margin: auto;
+
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+}
