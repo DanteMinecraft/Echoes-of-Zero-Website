@@ -17,8 +17,9 @@ const posts = await getPosts();
       <LandingHero
         logotypeHero={landingPageLogo}
         heroBackground="/inbetween_hero.jpg"
-        yellowButtonHref="https://www.fortnite.com/@danteminecraft?lang=en-US"
-        yellowButtonText="Play Now"
+        yellowButtonHref="/maps/inbetween"
+        yellowButtonTarget=""
+        yellowButtonText="Read More"
         />
       <NewsField
         posts={posts}

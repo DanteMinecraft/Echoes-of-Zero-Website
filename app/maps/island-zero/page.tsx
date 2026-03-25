@@ -20,6 +20,7 @@ export default async function IslandZeroSubpage() {
         logotypeHero={islandZeroLogo}
         heroBackground="/island_zero_hero.webp"
         yellowButtonHref="https://www.fortnite.com/@danteminecraft?lang=en-US"
+        yellowButtonTarget="_blank"
         yellowButtonText="Play Now"
       />
       <div className="island-zero-summary">
