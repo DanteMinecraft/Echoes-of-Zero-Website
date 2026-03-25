@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Echoes of Zero",
+  title: "The Island Zero Universe",
   description: "Follow the evolving story of Island Zero — explore the lore, maps, and updates behind the Echoes of Zero universe.",
   openGraph: {
     title: "Echoes of Zero",
     description:
       "Explore the story of Island Zero — maps, lore, and updates from the Echoes of Zero universe.",
-    images: ["../public/echoes_of_zero.png"],
+    images: ["@/public/inbetween_thumbnail.jpg"],
   }
 };
 

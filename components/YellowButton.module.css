@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+.yellowButton {
+    background-color: #F7FF19;
+    color: #000;
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: xxx-large;
+    padding: 0.8vh 2.5vw;
+    border-radius: 16px;
+}
+
+.yellowButton:hover {
+    outline: 6px solid #ffffffab;
+    outline-offset: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .yellowButton {
+        font-size: xx-large;
+    }
+
+    .yellowButton:hover {
+        outline: 4px solid #ffffffab;
+        outline-offset: 4px;
+    }
+
+}

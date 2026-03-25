@@ -5,6 +5,7 @@ import NewsField from "@/components/NewsField";
 import Footer from "@/components/Footer";
 
 import stylesFullSection from "@/components/FullSection.module.css";
+import yellow_btn_styles from "../../components/YellowButton.module.css";
 
 import { getPosts } from "@/lib/getPosts"
 

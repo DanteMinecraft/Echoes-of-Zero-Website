@@ -45,6 +45,8 @@
 
 .article ul {
     list-style: disc;
+    list-style-position: inside;
+    margin-left: 1vw;
 }
 
 .article h4 {
@@ -62,9 +64,13 @@
     border-radius: 16px;
 }
 
+.article p, .article ul {
+    padding: 1vh 0;
+}
+
 .articleText {
     padding: 5vh 0;
-    max-width: 40%;
+    max-width: 45%;
     margin: auto;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

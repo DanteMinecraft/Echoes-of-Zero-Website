@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import styles from "./LandingHero.module.css";
+import yellow_btn_styles from "./YellowButton.module.css";
 
 export default function LandingHero({ logotypeHero, heroBackground, yellowButtonText, yellowButtonHref }: any) {
     return (
@@ -17,7 +18,7 @@ export default function LandingHero({ logotypeHero, heroBackground, yellowButton
                         alt="Logotype"
                         className={styles.logotype}
                     />
-                    <a href={yellowButtonHref} className={styles.yellowButton} target="_blank" rel="noopener noreferrer">{yellowButtonText}</a>
+                    <a href={yellowButtonHref} className={yellow_btn_styles.yellowButton} target="_blank" rel="noopener noreferrer">{yellowButtonText}</a>
                 </div>
             </div >
         </>
