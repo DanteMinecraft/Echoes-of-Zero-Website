@@ -2,7 +2,7 @@ import styles from "./3Grid.module.css";
 import MapCard from "./MapCard";
 
 import inbetweenThumbnail from "@/public/inbetween_thumbnail.jpg";
-import placeholder from "@/public/placeholder.png";
+import islandzeroThumbnail from "@/public/islandzero_thumbnail.jpg";
 
 export default function MapContainer() {
     return (
@@ -19,7 +19,7 @@ export default function MapContainer() {
                     <MapCard
                         title="Island Zero"
                         onSiteLink="island-zero"
-                        image={placeholder}
+                        image={islandzeroThumbnail}
                     />
             </div>
         </>
